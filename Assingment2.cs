@@ -3,21 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Assignment2
-{
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using System.ComponentModel.DataAnnotations;
-	using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;  
+using System.ComponentModel.DataAnnotations.Schema;
 
 	namespace LiwareOrganisation
 	{
-		internal class Employee
+		class Employee
 		{
 			private int empNo;
 			private String empName;
@@ -125,4 +116,4 @@ namespace Assignment2
 		}
 
 	}
-}
+
