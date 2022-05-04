@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace calculator
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    namespace Calc
-    {
-        internal class Calculation
+ 
+        public class Calculation
         {
             static void Main(string[] args)
             {
@@ -52,4 +45,4 @@ namespace calculator
             }
         }
     }
-}
+
