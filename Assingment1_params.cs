@@ -4,15 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace calc
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    namespace Console
+
+namespace Console
     {
         class Static_Params
         {
@@ -47,4 +41,4 @@ namespace calc
 
     }
 
-}
+
