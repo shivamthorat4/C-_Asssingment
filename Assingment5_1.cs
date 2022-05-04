@@ -1,40 +1,40 @@
 using System;
-using System;
-namespace sample
-{
-    class array
-    {
-        static void Main(string[] args)
+class Demo {
+   static void Main() 
+   {
+      int[] arr = {1,11,54,53,2,21,544,66,22,3,43};
+      int[] arr2 = new int[11];
+      
+      // sort
+      Array.Sort(arr);
+      Console.WriteLine("Sorted Array");
+      foreach (int res in arr) 
+      {
+      Console.Write("\n"+res);
+      }
+            
+        //Reverse
+      Array.Reverse(arr);
+      Console.WriteLine("Reverse Array");
+
+      foreach (int ress in arr)
+      {
+      Console.Write("\n"+ress);
+      }
+      
+      //Copy arr in arr2
+      Array.Copy(arr, arr2, 11);
+
+        Console.WriteLine("Copy Array");
+        foreach (int value in arr2)
         {
-            // Creating an array  
-            int[] arr = new int[6] { 5, 8, 9, 25, 0, 7 };
-            // Creating an empty array  
-            int[] arr2 = new int[6];
-            // Displaying length of array  
-            Console.WriteLine("length of first array: " + arr.Length);
-            // Sorting array  
-            Array.Sort(arr);
-            Console.Write("First array elements: ");
-            // Displaying sorted array  
-            PrintArray(arr);
-            // Finding index of an array element  
-            Console.WriteLine("\nIndex position of 25 is " + Array.IndexOf(arr, 25));
-            // Coping first array to empty array  
-            Array.Copy(arr, arr2, arr.Length);
-            Console.Write("Second array elements: ");
-            // Displaying second array  
-            PrintArray(arr2);
-            Array.Reverse(arr);
-            Console.Write("\nFirst Array elements in reverse order: ");
-            PrintArray(arr);
-        }
-        // User defined method for iterating array elements  
-        static void PrintArray(int[] arr)
-        {
-            foreach (Object elem in arr)
-            {
-                Console.Write(elem + " ");
-            }
-        }
-    }
+            Console.WriteLine(value);
+   }
+     //Clear the Array
+      Array.Clear(arr, 0, arr.Length);
+      Console.WriteLine("Array After Clear:");
+      foreach (int val in arr) {
+         Console.WriteLine(val);
+}
+}
 }
