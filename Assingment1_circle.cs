@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace Cirle
 {
-    using System;
-
     class Circle_Area
     {
         static double circumference(double r)
