@@ -1,3 +1,4 @@
+   
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,15 +21,17 @@ namespace Employee
                 Console.WriteLine("List of employees" + ':' + list[i]);
             }
             Console.WriteLine("total number of employess" + ':' + list.Count);
+            
             Console.WriteLine("enter person name:");
-            string X = Console.ReadLine();
-            if (list.Contains(X))
+            string search = Console.ReadLine();
+            
+            if (list.Contains(search))
             {
-                Console.WriteLine("yes " + X + " is an employee");
+                Console.WriteLine("Yes " + search + " is an employee of the company");
             }
             else
             {
-                Console.WriteLine("no");
+                Console.WriteLine(search + " not an employee of the company");
             }
 
 
