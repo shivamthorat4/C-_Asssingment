@@ -5,10 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace calculator
-{
-    using System;
-    using System.Collections.Generic;
-    class StudentMarks
+
+    
     {
         static void getStudList(string[] file)
         {
@@ -48,4 +46,4 @@ namespace calculator
         }
     }
 
-}
+
