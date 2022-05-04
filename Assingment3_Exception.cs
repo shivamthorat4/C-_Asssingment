@@ -69,7 +69,7 @@ namespace Except
             }
             catch (Exception e)
             {
-                
+                Console.WriteLine("Exception is {0} ", e );
             }
         }
 
