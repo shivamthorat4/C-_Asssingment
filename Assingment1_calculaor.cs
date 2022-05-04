@@ -36,9 +36,7 @@ namespace calculator
                     case 4:
                         Console.WriteLine("Multiplicaion is : " + (a * b));
                         break;
-                    default:
-                        Console.WriteLine();
-                        break;
+                    
                 }
                 Console.ReadLine();
 
