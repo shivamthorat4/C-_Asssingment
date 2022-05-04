@@ -1,33 +1,19 @@
+
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Cirle
+					
+public class Circle
 {
-    class Circle_Area
-    {
-        static double circumference(double r)
-        {
-
-            double PI = 3.1415;
-            double cir = 2 * PI * r;
-            return cir;
-        }
-        public static void Main()
-        {
-
-            double r;
-            Console.Write("Enter Radius: ");
-            r = Convert.ToInt32(Console.ReadLine());
-            double result =
-                  Math.Round(circumference(r)
-                            * 1000) / 1000.0;
-
-            Console.WriteLine("Circumference = "
-                                      + result);
-        }
-    }
-
+	public static void Main()
+	{
+		double radius;
+		double circumference;
+		
+		Console.WriteLine("Enter the value of radius:");
+		radius = double.Parse(Console.ReadLine());
+		
+		circumference = 2 * Math.PI * radius;
+		
+		Console.WriteLine("Circumference :"+Math.Round(circumference, 2));
+		Console.WriteLine("Area: "+Math.PI*(radius*radius));
+	}
 }
