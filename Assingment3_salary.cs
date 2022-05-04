@@ -3,21 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Assignment2
-{
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using System.ComponentModel.DataAnnotations;
-	using System.ComponentModel.DataAnnotations.Schema;
-
-	namespace LibwareLib
+namespace LibwareLib
 	{
-		internal class Employee1
+		class Employee1
 		{
 			private int empNo;
 			private String empName;
@@ -129,4 +120,4 @@ namespace Assignment2
 		}
 
 	}
-}
+
