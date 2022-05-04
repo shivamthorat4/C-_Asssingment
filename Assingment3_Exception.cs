@@ -19,8 +19,7 @@ namespace Except
             pp.Push(30);
             pp.Push(40);
             pp.Push(50);
-         //   pp.Push(60);
-        //    pp.Push(70);
+         
             pp.print();
             Console.WriteLine("Element removed from stack:" + pp.Pop());
             Console.WriteLine("Element removed from stack:" + pp.Pop());
@@ -31,7 +30,6 @@ namespace Except
             Console.WriteLine("Element removed from stack:" + pp.Pop());
             Console.WriteLine("Element removed from stack:" + pp.Pop());
 
-            //pp.print();
 
 
         }
