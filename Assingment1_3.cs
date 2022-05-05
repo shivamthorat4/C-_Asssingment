@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 
 
-namespace Console
+namespace ConsoleApp
     {
         class Static_Params
         {
