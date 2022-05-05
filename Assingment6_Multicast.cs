@@ -50,7 +50,10 @@ namespace Employees
             Console.Write("Enter the emp WorkLocation : ");
             this.workLocation = Console.ReadLine();
 
-            Console.WriteLine(":::::::::::::::");
+            Console.WriteLine("_____________________");
+            Console.WriteLine("\n /--/--/--/--/--/--/--/");
+            Console.WriteLine("_____________________");
+
 
             Console.Write("Enter the MarketingExecutive id : ");
             this.meId = (Convert.ToInt32(Console.ReadLine()));
@@ -71,7 +74,7 @@ namespace Employees
 
         public void Display()
         {
-            Console.WriteLine("Employee Details::::::::");
+            Console.WriteLine("Employee Details\n ------------");
             Console.WriteLine("Employee Id : {0}",empId);
             Console.WriteLine("Employee Name : {0}",empName);
             Console.WriteLine("Employee Company Name : {0}",companyName );
@@ -80,12 +83,14 @@ namespace Employees
 
             Console.WriteLine("Employee Work Location : {0}",workLocation);
 
-            Console.WriteLine("################################");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("-----------------------");
+
         }
         
         public void MarketingExecutiveDisplay()
         {
-            Console.WriteLine("MarketingExecutiveDetails:::::::::");
+            Console.WriteLine("MarketingExecutiveDetails\n-----------");
             Console.WriteLine("MarketingExecutive Employee Id : {0}",meId );
             Console.WriteLine("MarketingExecutive Employee Name : {0}", meName);
             Console.WriteLine("MarketingExecutive Employee Company Name : {0}", meCompanyName);
