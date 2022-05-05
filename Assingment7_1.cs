@@ -6,15 +6,25 @@ using System.Threading.Tasks;
 using System.IO;
 namespace fileIO
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            string dir = @"C:\Shivm\FileIO";
+            string dir = @"C:\Shivam\FileIO";
+            
+            if(File.Exists(dir))
+            {
+                Console.WriteLine("File Found");
+            }
+            else
+            {
+                Console.WriteLine("File not Found");
+            }
             string subdir1 = @"C:\Shivam\FileIO\Write";
             string subdir2 = @"C:\Shivam\FileIO\Read";
-            string srcFilepath = @"C:\Shivam\FileIO\Write\myFile.txt";
-            string desFilepath = @"C:\Shivam\FileIO\Read\myFile.txt";
+            string srcFilepath = @"C:\Shivam\FileIO\Write\File.txt";
+            string desFilepath = @"C:\Shivam\FileIO\Read\File.txt";
+            
             Directory.CreateDirectory(dir);
             Directory.CreateDirectory(subdir1);
             Directory.CreateDirectory(subdir2);
@@ -40,6 +50,3 @@ namespace fileIO
         }
     }
 }
-
-
-
